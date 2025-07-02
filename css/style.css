@@ -123,7 +123,7 @@ footer {
 
 .carta .significado {
     font-size: 0.9rem;
-    color: #fff2c2;
+    color: #efe1ac;
     margin-top: 0.5rem;
 }
 
@@ -147,4 +147,62 @@ button {
 button:hover {
     transform: scale(1.05);
     box-shadow: 0 0 18px #d4af37;
+}
+
+.carta h3 {
+    color: #6a4fa3;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 0.3em;
+}
+
+.selector-tirada {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem;
+}
+
+.selector-tirada label {
+    font-size: 1.1rem;
+    color: #5c4d7d;
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+}
+
+.selector-tirada select {
+    padding: 0.4rem 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #fdfbfd;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.selector-tirada select:hover {
+    box-shadow: 0 0 6px rgba(106, 79, 163, 0.3);
+}
+#descripcion-tirada {
+  margin-top: 2rem;
+  padding: 1rem;
+  border-top: 5px solid #d0c0e0;
+  background-color: #f4eadb;
+}
+
+#descripcion-tirada h3 {
+  font-size: 1.3rem;
+  color: #6a4fa3;
+  margin-bottom: 0.8rem;
+}
+
+#descripcion-tirada p {
+  color: #bfa642;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  text-shadow: 0 0 5px rgba(191, 166, 66, 0.3);
+  font-weight: 500;
 }
