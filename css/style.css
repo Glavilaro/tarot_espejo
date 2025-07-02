@@ -1,26 +1,30 @@
-*{
+* {
     margin: 0%;
     padding: 0%;
 }
 
-body{
+body {
     margin: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
     background: linear-gradient(to bottom, #0e0d1b, #1c1a36);
     color: #fff;
 }
-header{
+
+header {
     background: rgba(0, 0, 0, 0.6);
     text-align: center;
     padding: 2rem 1rem;
     border-bottom: 2px solid #d4af37;
 }
-header h1{
+
+header h1 {
     font-size: 2.5rem;
     color: #d4af37;
     text-shadow: 0 0 6px #fff2c2;
+    padding-bottom: 10px;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: center;
     background-color: #1f1d2b;
@@ -28,22 +32,25 @@ nav{
     border-top: 1px solid #d4af37;
     border-bottom: 1px solid #d4af37;
 }
-nav ul{
+
+nav ul {
     list-style: none;
     display: flex;
-    gap:2rem;
+    gap: 2rem;
     margin: 0;
     padding: 0;
 }
-nav li a{
+
+nav li a {
     text-decoration: none;
     color: #fff2c2;
     font-weight: bold;
     position: relative;
     transform: color 0.3s ease;
 }
-nav li a ::after{
-    content:'✨';
+
+nav li a ::after {
+    content: '✨';
     position: absolute;
     top: -10px;
     right: -15px;
@@ -51,24 +58,29 @@ nav li a ::after{
     transition: opacity 0.3 ease;
 }
 
-nav li a :hover{
+nav li a :hover {
     color: #d4af37;
 }
-nav li a:hover::after{
+
+nav li a:hover::after {
     opacity: 1;
 }
-section{
+
+section {
     padding: 3rem 1rem;
     max-width: 800px;
     margin: 0 auto;
 }
-h2{
+
+h2 {
     color: #d4af37;
     border-bottom: 1px solid #fff2c2;
     padding-bottom: 0.5rem;
     margin-bottom: 1rem;
+    text-align: center;
 }
-footer{
+
+footer {
     background-color: #0e0d1b;
     text-align: center;
     padding: 1rem;
@@ -76,40 +88,63 @@ footer{
     color: #aaa;
     border-top: 1px solid #d4af37;
 }
+
 .tirada {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-  margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
 }
 
 .carta {
-  max-width: 180px;
-  text-align: center;
-  padding: 1rem;
-  background-color: rgba(255, 255, 255, 0.05);
-  border: 1px solid #d4af37;
-  border-radius: 8px;
-  box-shadow: 0 0 12px #d4af3770;
-  transition: transform 0.3s ease;
+    max-width: 180px;
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid #d4af37;
+    border-radius: 8px;
+    box-shadow: 0 0 12px #d4af3770;
+    transition: transform 0.3s ease;
 }
 
 .carta img {
-  width: 100%;
-  height: 260px;
-  object-fit: cover;
-  border-radius: 4px;
-  margin-bottom: 0.5rem;
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
 }
 
 .carta:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 18px #d4af37;
+    transform: scale(1.05);
+    box-shadow: 0 0 18px #d4af37;
 }
 
 .carta .significado {
-  font-size: 0.9rem;
-  color: #fff2c2;
-  margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #fff2c2;
+    margin-top: 0.5rem;
+}
+
+button {
+    display: block;
+    margin: 3rem auto 0;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    background-color: #d4af37;
+    color: #0e0d1b;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #d4af37aa;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 18px #d4af37;
 }
