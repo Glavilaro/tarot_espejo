@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tarot Espejo</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
@@ -13,42 +13,59 @@
         <h1>Tarot Espejo</h1>
         <nav>
             <ul>
-                <li><a href="#lecturas">Lectura</a></li>
-                <li><a href="#acerca">acerca de mi</a></li>
-                <li><a href="#contacto">contacto</a></li>
+                <li><a href="#lectura">Lectura</a></li>
+                <li><a href="#acerca">Acerca de mí</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
-
-
     </header>
+
     <main>
         <section id="lectura">
-            <h2>lectura de tarot</h2>
-            <p>Elegí tu tirada y descubrí que revelan los Arcanos mayores para vos :</p>
+            <h2>Lectura de Tarot</h2>
+            <p>Elegí tu tirada y descubrí qué revelan los Arcanos mayores para vos:</p>
+
+            <!-- Selector de tipo de tirada -->
+            <label for="tipoTirada">Elige tipo de tirada:</label>
+            <select id="tipoTirada">
+                <option value="general">General</option>
+                <option value="amor">Amor</option>
+                <option value="salud">Salud</option>
+                <option value="dinero">Dinero</option>
+            </select>
+
+            <!-- Botón para activar tirada -->
+            <button id="botonTirar">Tirar las cartas</button>
+
+            <!-- Contenedor de cartas -->
             <div id="tirada" class="tirada">
                 <!-- Las cartas aparecerán acá -->
             </div>
-            <button onclick="tirarCartas()">Tirar las cartas</button>
+
+            <!-- Interpretación dinámica -->
+            <div id="descripcion-tirada">
+                <h3>Interpretación</h3>
+                <p>Esta tirada muestra los desafíos y oportunidades en tu vida general...</p>
+            </div>
         </section>
 
         <section id="acerca">
-            <h2>Acerca de mi</h2>
-            <p>Conectando intuicion con experiencia para guiarte con sabiduria</p>
-
+            <h2>Acerca de mí</h2>
+            <p>Conectando intuición con experiencia para guiarte con sabiduría.</p>
         </section>
-
 
         <section id="contacto">
             <h2>Contacto</h2>
-            <p>¿queres una lectura personalizada?escribime</p>
-            <!--formulario de contacto-->
+            <p>¿Querés una lectura personalizada? ¡Escribime!</p>
+            <!-- Aquí irá tu formulario -->
         </section>
-
     </main>
-    <footer>
-        <p>@tarotespejo con energia positva sabiduria y respeto</p>
 
+    <footer>
+        <p>@tarotespejo con energía positiva, sabiduría y respeto.</p>
     </footer>
+
+    <script type="module" src="./js/main.js"></script>
 </body>
-<script src="script.js"></script>
+
 </html>
