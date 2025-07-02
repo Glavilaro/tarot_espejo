@@ -76,3 +76,40 @@ footer{
     color: #aaa;
     border-top: 1px solid #d4af37;
 }
+.tirada {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.carta {
+  max-width: 180px;
+  text-align: center;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid #d4af37;
+  border-radius: 8px;
+  box-shadow: 0 0 12px #d4af3770;
+  transition: transform 0.3s ease;
+}
+
+.carta img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.carta:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 18px #d4af37;
+}
+
+.carta .significado {
+  font-size: 0.9rem;
+  color: #fff2c2;
+  margin-top: 0.5rem;
+}
